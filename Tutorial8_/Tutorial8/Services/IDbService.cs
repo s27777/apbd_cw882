@@ -2,7 +2,8 @@
 
 namespace Tutorial8.Services;
 
-public interface ITripsService
+public interface IDbService
 {
     Task<List<TripDTO>> GetTrips();
+    Task<List<TripDTO>> GetClientTrips(int id);
 }
